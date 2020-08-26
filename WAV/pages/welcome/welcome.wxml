@@ -1,0 +1,21 @@
+<!-- 轮播图 -->
+<view>
+  <swiper indicator-dots="true" indicator-color="cyan" indicator-active-color="yellow"  autoplay="true" interval="3000" circular="true" catchtap="onSwiperTap">
+    <swiper-item>
+      <image src="/images/detail/1.jpg" data-message-id='1'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/2.jpg" data-message-id='2'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/3.jpg" data-message-id='3'/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/detail/4.jpg" data-message-id='4'/>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 页面跳转 onTapJump事件 -->
+<view class="journey-container">
+  <text class="journey" catchtap="onTapJump">开启WAV志愿之旅</text>
+</view>

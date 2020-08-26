@@ -1,0 +1,28 @@
+page{
+  background-color: rgb(168, 209, 236);
+}
+swiper{
+  width: 100%;
+  height: 1000rpx;
+}
+swiper image{
+  width: 100%;
+  height: 1000rpx;
+}
+.journey-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.journey{
+  margin-top: 80rpx;
+  border: 1px solid #EA5A3C;
+  width:200rpx;
+  height:80rpx;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 22rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color:#EA5A3C;
+}

@@ -1,0 +1,14 @@
+<!--pages/welcome/welcome-detail/welcome-detail.wxml-->
+<view class="container">
+  <text class="name">{{activity.name}}</text>
+  <view class="message">
+    <text>{{activity.organizer}}</text>
+    <text>{{activity.leader}}</text>
+    <text>{{activity.date}}</text>
+    <text>{{activity.location}}</text>
+  </view>
+  <text class="introduction">{{activity.introduction}}</text>
+  <image class="image" src="{{activity.image}}"></image>
+  <text class="demand">{{activity.demand}}</text>
+  <button>点击报名</button>
+</view>
