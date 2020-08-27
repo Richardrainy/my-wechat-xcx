@@ -1,0 +1,37 @@
+<!--pages/message/message-detail/message-detail.wxml-->
+<view class="container">
+  <view class="author-date">
+    <view class="author-box">
+      <image class="avatar" src="{{message.avatar}}"></image>
+      <text class="author">{{message.author}}</text>
+    </view>
+    <text class="date">{{message.dateTime}}</text>
+  </view>
+  <!-- 若有图片，则以轮播图循环渲染，若图片数组为空，则不渲染 -->
+  <view class="images" wx:if="{{message.images.length!=0}}">
+  <swiper indicator-dots="true" indicator-color="cyan" indicator-active-color="yellow"  autoplay="true" interval="3000" circular="true" catchtap="onSwiperTap">
+    <block wx:for="{{message.images}}" wx:for-item="item" wx:for-index="idx">
+      <swiper-item>
+      <image src="{{item}}" mode="aspectFill"/>
+    </swiper-item>
+</block>
+  </swiper>
+</view>
+  <text class="detail">{{message.detail}}</text>
+</view>
+<view class="tool">
+  <view class="tool-item" catchtap="onUpTap" data-message-id="{{message.messageId}}">
+  <!-- 绑定动画 -->
+    <image animation="{{animationUp}}" wx:if="{{message.upStatus}}" src="/images/icon/爱心 (1).png" />
+     <image animation="{{animationUp}}" wx:else src="/images/icon/爱心.png" />
+    <text>{{message.upNum}}</text>
+  </view>
+  <view class="tool-item" catchtap="onReadingTap" data-message-id="{{message.messageId}}">
+    <image src="/images/icon/眼睛.png" />
+    <text>{{message.readingNum}}</text>
+  </view>
+  <view class="tool-item comment" catchtap="onCommentTap" data-message-id="{{message.messageId}}">
+    <image src="/images/icon/消息.png"></image>
+    <text>{{message.commentNum}}</text>
+  </view>
+</view>

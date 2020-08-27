@@ -1,0 +1,64 @@
+.message-container{
+  flex-direction:column;
+  display:flex;
+  margin:20rpx 0 40rpx;
+  background-color:#fff;
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+  padding-bottom: 5px;
+}
+
+.message-author-date{
+  margin: 10rpx 0 20rpx 10px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.message-author-date image{
+  width:60rpx;
+  height:60rpx;
+}
+.message-author-date .text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.message-author-date .text text{
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: black;
+}
+.message-author-date .text text:last-child{
+  font-size: 20rpx;
+  color: gray;
+  line-height: 30rpx;
+}
+
+
+.message-content{
+  color:#666;
+  font-size:26rpx;
+  margin-bottom:20rpx;
+  margin:0rpx 20rpx;
+  letter-spacing:2rpx;
+  line-height: 40rpx;
+}
+.message-like{
+  display:flex;
+  flex-direction: row;
+  font-size:13px;
+  line-height: 16px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.message-like image{
+  height:16px;
+  width:16px;
+  margin-right: 8px;
+}
+
+.message-like text{
+  margin-right: 20px;
+}

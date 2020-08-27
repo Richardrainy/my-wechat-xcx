@@ -23,9 +23,9 @@ Page({
   // 轮播图点击跳转活动详情
   onSwiperTap: function(event){
     // 获得组件自定义属性
-    var messageId = event.target.dataset.messageId;
+    var activityId = event.target.dataset.activityId;
     wx:wx.navigateTo({
-      url: 'welcome-detail/welcome-detail?id='+ messageId,
+      url: 'welcome-detail/welcome-detail?id='+ activityId,
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},

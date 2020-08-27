@@ -1,1 +1,3 @@
 /* pages/message/message.wxss */
+/* 引入模板样式 */
+@import "message-item/message-item-tpl.wxss";

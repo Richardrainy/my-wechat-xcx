@@ -7,6 +7,7 @@
     "pages/site/site",
     "pages/post/post",
     "pages/search/search",
+    "pages/search/search_results/search_results",
     "pages/my/my"
   ],
   "window": {

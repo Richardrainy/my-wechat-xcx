@@ -1,2 +1,35 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="act">
+  <!-- 活动地点 -->
+  <view class="act-address">
+    <text class="key">活动地点:</text>
+  </view>
+
+  <!-- 所属组织 -->
+  <view class="act-organization">
+    <text class="key">活动所属组织:</text>
+  </view>
+
+  <!-- 活动类别 -->
+  <view class="act-category">
+    <text class="key">活动类别:</text>
+  </view>
+
+  <!-- 活动时长 -->
+  <view class="act-time">
+    <text class="key">活动时长:</text>
+  </view>
+
+  <!-- 活动日期 -->
+  <view class="act-date">
+    <text class="key">活动日期:</text>
+    <picker mode="date" value="{{date}}" start="{{date}}" end="2021-07-01" bindchange="bindDataChange">
+      <view class="value" name="endtime">{{date}}
+        <image class="arrow-date" src="/images/icon/日签.png"></image>
+      </view>
+    </picker>
+  </view>
+</view>
+<view class="search-button">
+  <button class="search-btn" type="primary">初筛查询</button>
+</view>

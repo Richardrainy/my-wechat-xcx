@@ -1,4 +1,6 @@
 // pages/message/message.js
+// 引入message数据模块
+var messages = require('../../data/message.js');
 Page({
 
   /**
@@ -12,9 +14,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var messageId = options.id;
+    this.messageList = messages.messageList;
+    this.setData({
+      messageList:this.messageList
+    })
   },
-
+  onTapToDetail: function (event) {
+    // 获取组件自定义属性名,跳转到详情页面
+    var messageId = event.currentTarget.dataset.messageId;
+    this.message =  this.messageList[messageId-1];
+    // 增加阅读量
+    this.message.readingNum++;
+    this.setData({
+      messageList:this.messageList
+    })
+    wx.navigateTo({
+      url: 'message-detail/message-detail?id='+ messageId,
+    })
+    
+    
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

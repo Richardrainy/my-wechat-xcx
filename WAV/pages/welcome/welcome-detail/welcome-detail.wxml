@@ -2,13 +2,27 @@
 <view class="container">
   <text class="name">{{activity.name}}</text>
   <view class="message">
-    <text>{{activity.organizer}}</text>
-    <text>{{activity.leader}}</text>
-    <text>{{activity.date}}</text>
-    <text>{{activity.location}}</text>
+    <text class="organizer">{{activity.organizer}}</text>
+    <text class="leader">{{activity.leader}}</text>
+    <text class="date">{{activity.date}}</text>
+    <text class="location">{{activity.location}}</text>
   </view>
-  <text class="introduction">{{activity.introduction}}</text>
-  <image class="image" src="{{activity.image}}"></image>
-  <text class="demand">{{activity.demand}}</text>
-  <button>点击报名</button>
+  <text user-select class="introduction">{{activity.introduction}}</text>
+  <image class="image" src="{{activity.image}}"mode="scaleToFill"></image>
+  <text class="demand">活动要求：</text>
+  <block wx:for="{{activity.demand}}" wx:for-item="item" wx:for-index="idx">
+    <text class="demand">{{item}}</text></block>>
+  <button size="mini" hover-class="hover">点击报名</button>
+</view>
+<view class="tool">
+  <view class="tool-item" catchtap="onSignUpTap" >
+    <image wx:if="{{activity.signupStatus}}" src="/images/icon/我的关注 (1).png" />
+     <image wx:else src="/images/icon/我的关注.png" />
+    <text>{{activity.signupNum}}</text>
+  </view>
+  <view class="tool-item" catchtap="onCollectionTap">
+    <image wx:if="{{activity.collectionStatus}}" src="/images/icon/收藏 (1).png" />
+    <image wx:else src="/images/icon/收藏.png" />
+    <text>{{activity.collectionNum}}</text>
+  </view>
 </view>

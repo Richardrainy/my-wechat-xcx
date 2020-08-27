@@ -1,0 +1,20 @@
+<template name="messageItemTpl">
+ <view class="message-container">
+      <view class="message-author-date">
+        <image src="{{avatar}}" />
+        <view class="text">
+          <text>{{author}}</text>
+          <text>{{dateTime}}</text>
+        </view>
+      </view>
+      <text class="message-content">{{content}}</text>
+      <view class="message-like">
+        <image src="/images/icon/爱心.png" />
+        <text>{{upNum}}</text>
+        <image src="/images/icon/眼睛.png"></image>
+        <text>{{readingNum}}</text>
+        <image src="/images/icon/消息.png"></image>
+        <text>{{commentNum}}</text>
+      </view>
+    </view>
+ </template>

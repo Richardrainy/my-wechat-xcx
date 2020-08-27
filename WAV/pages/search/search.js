@@ -8,6 +8,20 @@ Page({
 
   },
 
+  onTapJump: function (event) {
+    wx.switchTab({
+      url: "../search/search-results/search-results",
+      success: function () {
+        console.log("jump success")
+      },
+      fail: function () {
+        console.log("jump failed")
+      },
+      complete: function () {
+        console.log("jump complete")
+      }
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

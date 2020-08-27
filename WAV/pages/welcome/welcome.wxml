@@ -2,16 +2,16 @@
 <view>
   <swiper indicator-dots="true" indicator-color="cyan" indicator-active-color="yellow"  autoplay="true" interval="3000" circular="true" catchtap="onSwiperTap">
     <swiper-item>
-      <image src="/images/detail/1.jpg" data-message-id='1'/>
+      <image src="/images/detail/1.jpg" data-activity-id='1'/>
     </swiper-item>
     <swiper-item>
-      <image src="/images/detail/2.jpg" data-message-id='2'/>
+      <image src="/images/detail/2.jpg" data-activity-id='2'/>
     </swiper-item>
     <swiper-item>
-      <image src="/images/detail/3.jpg" data-message-id='3'/>
+      <image src="/images/detail/3.jpg" data-activity-id='3'/>
     </swiper-item>
     <swiper-item>
-      <image src="/images/detail/4.jpg" data-message-id='4'/>
+      <image src="/images/detail/4.jpg" data-activity-id='4'/>
     </swiper-item>
   </swiper>
 </view>

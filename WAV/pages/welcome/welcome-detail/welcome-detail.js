@@ -15,18 +15,48 @@ Page({
    */
   onLoad: function (options) {
     // 获取页面参数值
-    var messageId = options.id;
+    var activityId = options.id;
+    this.activity = activities.activityList[activityId-1];
     this.setData({
-      activity:activities.activityList[messageId-1]
+      activity:this.activity
     })
-
+  },
+  onSignUpTap: function(){
+    if (!this.activity.signupStatus) {
+      //如果当前状态是未报名
+      this.activity.signupNum++;
+      this.activity.signupStatus = true;
+  } else {
+      // 如果当前状态是报名
+      this.activity.signupNum--;
+      this.activity.signupStatus = false;
+  }
+    this.setData({
+      'activity.signupStatus': this.activity.signupStatus,
+      'activity.signupNum': this.activity.signupNum
+    })
+  },
+  onCollectionTap: function(){
+    if (!this.activity.collectionStatus) {
+      //如果当前状态是未收藏
+      this.activity.collectionNum++;
+      this.activity.collectionStatus = true;
+  } else {
+      // 如果当前状态是收藏
+      this.activity.collectionNum--;
+      this.activity.collectionStatus = false;
+  }
+    this.setData({
+      'activity.collectionStatus': this.activity.collectionStatus,
+      'activity.collectionNum': this.activity.collectionNum
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
+  onReady: function (options) {
+    
   },
 
   /**
