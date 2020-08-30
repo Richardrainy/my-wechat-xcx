@@ -1,22 +1,7 @@
-// pages/search/search_results/search_results.js
 //Page Object
 Page({
   data: {
-    
-  },
-  jumpPage: function (event) {
-    wx.navigateTo({
-      url: '../../search/sign-in/sign-in',
-      success: function () {
-        console.log("jump success")
-      },
-      fail: function () {
-        console.log("jump failed")
-      },
-      complete: function () {
-        console.log("jump complete")
-      }
-    });
+    text:"您已提交报名申请，具体结果请在“我的报名”中查看，谢谢！",
   },
   //options(Object)
   onLoad: function(options){

@@ -1,0 +1,6 @@
+<view class="tip-a">
+  <text decode="{{true}}">提&emsp;示</text>
+</view>
+<view class="tip-b">
+  <text >{{text}}</text>
+</view>

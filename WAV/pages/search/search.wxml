@@ -1,35 +1,54 @@
 <!--pages/search/search.wxml-->
-<view class="act">
   <!-- 活动地点 -->
-  <view class="act-address">
+  <view class="act address">
     <text class="key">活动地点:</text>
+    <picker value="{{actAddressIndex}}" range="{{actAddress}}" bindchange="bindAddressChange">
+      <view class="value" name="actAddress">{{actAddress[actAddressIndex]}}
+        <image class="arrow-select" src="/images/icon/右箭头.png"></image>
+      </view>
+    </picker>
   </view>
 
   <!-- 所属组织 -->
-  <view class="act-organization">
+  <view class="act organization">
     <text class="key">活动所属组织:</text>
+    <picker value="{{actOrgIndex}}" range="{{actOrg}}" bindchange="bindOrgChange">
+      <view class="value" name="actOrg">{{actOrg[actOrgIndex]}}
+        <image class="arrow-select" src="/images/icon/右箭头.png"></image>
+      </view>
+    </picker>
   </view>
 
   <!-- 活动类别 -->
-  <view class="act-category">
+  <view class="act category">
     <text class="key">活动类别:</text>
+    <picker value="{{actCtgIndex}}" range="{{actCtg}}" bindchange="bindCtgChange">
+      <view class="value" name="actCtg">{{actCtg[actCtgIndex]}}
+        <image class="arrow-select" src="/images/icon/右箭头.png"></image>
+      </view>
+    </picker>
   </view>
 
   <!-- 活动时长 -->
-  <view class="act-time">
+  <view class="act time">
     <text class="key">活动时长:</text>
+    <picker value="{{actTimeIndex}}" range="{{actTime}}" bindchange="bindTimeChange">
+      <view class="value" name="actTime">{{actTime[actTimeIndex]}}
+        <image class="arrow-select" src="/images/icon/右箭头.png"></image>
+      </view>
+    </picker>
   </view>
 
   <!-- 活动日期 -->
-  <view class="act-date">
+  <view class="act date">
     <text class="key">活动日期:</text>
-    <picker mode="date" value="{{date}}" start="{{date}}" end="2021-07-01" bindchange="bindDataChange">
+    <picker mode="date" value="{{date}}" start="{{date}}" end="2021-07-01" bindchange="bindDateChange">
       <view class="value" name="endtime">{{date}}
         <image class="arrow-date" src="/images/icon/日签.png"></image>
       </view>
     </picker>
   </view>
-</view>
+
 <view class="search-button">
-  <button class="search-btn" type="primary">初筛查询</button>
+  <button class="search-btn" type="primary" bindtap="jumpPage">初筛查询</button>
 </view>

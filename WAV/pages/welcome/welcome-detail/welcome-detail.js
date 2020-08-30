@@ -10,6 +10,20 @@ Page({
 
   },
 
+  jumpPage: function (event) {
+    wx.navigateTo({
+      url: '../../search/sign-in/sign-in',
+      success: function () {
+        console.log("jump success")
+      },
+      fail: function () {
+        console.log("jump failed")
+      },
+      complete: function () {
+        console.log("jump complete")
+      }
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

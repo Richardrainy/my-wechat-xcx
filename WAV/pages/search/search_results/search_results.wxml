@@ -1,2 +1,4 @@
 <!--pages/search/search_results/search_results.wxml-->
-<text>pages/search/search_results/search_results.wxml</text>
+<view class="sign-button">
+  <button class="sign-btn" size="mini" bindtap="jumpPage">点击报名</button>
+</view>

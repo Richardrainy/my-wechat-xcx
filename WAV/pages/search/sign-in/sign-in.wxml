@@ -1,0 +1,48 @@
+<!--pages/search/sign-in/sign-in.wxml-->
+<!-- 姓名 -->
+<view class="infor">
+  <image class="sign-icon" src="../../../images/icon/姓名.png" />
+  <text class="word">姓名：</text>
+  <input class="write" type="text" placeholder="单行输入"> </input>
+</view>
+<!-- 学号 -->
+<view class="infor">
+  <image class="sign-icon" src="../../../images/icon/学号.png" />
+  <text class="word">学号：</text>
+  <input  class="write" type="text" placeholder="单行输入"> </input>
+</view>
+<!-- 院系 -->
+<view class="infor">
+  <image class="sign-icon" src="../../../images/icon/院系.png" />
+  <text class="word">院系：</text>
+  <input  class="write" type="text" placeholder="单行输入"> </input>
+</view>
+<!-- 手机 -->
+<view class="infor">
+  <image class="sign-icon" src="../../../images/icon/手机.png" />
+  <text class="word">手机：</text>
+  <input  class="write" type="text" placeholder="单行输入"> </input>
+</view>
+<!-- QQ -->
+<view class="infor">
+  <image class="sign-icon" src="../../../images/icon/QQ.png" />
+  <text class="word">QQ：</text>
+  <input  class="write" type="text" placeholder="单行输入"> </input>
+</view>
+
+<!-- 报名须知 -->
+<view class="tips">
+  <radio value="r1" class="tick">
+    <text>{{text1}}</text>
+  </radio>
+</view>
+<view class="tips">
+  <radio value="r1" class="tick">
+    <text>{{text2}}</text>
+  </radio>
+</view>
+
+<!-- 报名按钮 -->
+<view class="sign-button">
+  <button type="primary" bindtap="jumpPage">提交</button>
+</view>

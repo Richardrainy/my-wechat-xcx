@@ -12,7 +12,7 @@
   <text class="demand">活动要求：</text>
   <block wx:for="{{activity.demand}}" wx:for-item="item" wx:for-index="idx">
     <text class="demand">{{item}}</text></block>>
-  <button size="mini" hover-class="hover">点击报名</button>
+  <button size="mini" hover-class="hover" bindtap="jumpPage">点击报名</button>
 </view>
 <view class="tool">
   <view class="tool-item" catchtap="onSignUpTap" >

@@ -1,12 +1,12 @@
-// pages/search/search_results/search_results.js
 //Page Object
 Page({
   data: {
-    
+    text1:"本人已明确知晓本次志愿服务活动的具体内容和要求",
+    text2:"本人符合本次活动的志愿者资质且真诚希望参与本次活动，决不懈怠",
   },
   jumpPage: function (event) {
     wx.navigateTo({
-      url: '../../search/sign-in/sign-in',
+      url: '../sign-in2/sign-in2',
       success: function () {
         console.log("jump success")
       },
