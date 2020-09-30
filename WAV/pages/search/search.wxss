@@ -6,39 +6,39 @@
   padding: 0 20rpx;
 }
 .address, .organization, .category, .time, .date{
-  border: 1px solid #f0f0f0;
+  border: 2rpx solid #f0f0f0;
   background-color: #fff;
   width: 90%;
-  height: 30px;
-  left:10px;
-  margin-top: 20px;
-  border-bottom: 1px solid #f0f0f0;
+  height: 60rpx;
+  left:20rpx;
+  margin-top: 40rpx;
+  border-bottom: 2rpx solid #f0f0f0;
 
 }
 .key{
   font-family: PingFangSC;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 40rpx;
   color: rgb(16, 16, 16);
   font-style: normal;
-  letter-spacing: 0px;
-  line-height: 28px;
+  letter-spacing: 0rpx;
+  line-height: 56rpx;
   text-decoration: none;
 }
 .arrow-select{
   background-color: #fff;
-  width: 20px;
-  height: 20px;
-  left: 10px;
+  width: 40rpx;
+  height: 40rpx;
+  left: 20rpx;
 }
 .arrow-date{
   background-color: #fff;
-  width: 20px;
-  height: 20px;
-  left: 10px;
+  width: 40rpx;
+  height: 40rpx;
+  left: 20rpx;
 }
 button{
-  margin-top: 70%;
+  margin-top: 60%;
 }
 .select-btn{
   width:60%;
@@ -47,9 +47,9 @@ button{
 }
 .value{
   color: #b2b2b2;
-  left: 10px;
-  line-height: 28px;
-  margin-top: 1px;
+  left: 20rpx;
+  line-height: 56rpx;
+  margin-top: 2rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

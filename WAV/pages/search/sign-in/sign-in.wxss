@@ -3,46 +3,46 @@
     margin-top: 10%;
 }
 .sign-icon{
-    width:20px;
-    height: 20px;
-    margin-left: 15px;
-    margin-top: 2.5px;
+    width:40rpx;
+    height: 40rpx;
+    margin-left: 30rpx;
+    margin-top: 5rpx;
 }
 .word{
-    width: 54px;
-    height:25px;
-    margin-left:15px;
-    margin-top: 2.5px;
+    width: 108rpx;
+    height:50rpx;
+    margin-left:30rpx;
+    margin-top: 5rpx;
     font-family: PingFangSC;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 36rpx;
     color: rgb(16, 16, 16);
     font-style: normal;
-    letter-spacing: 0px;
-    line-height: 25px;
+    letter-spacing: 0rpx;
+    line-height: 50rpx;
     text-decoration: none;
     text-align: left;
 }
 .write{
-    padding: 0 8px;
+    padding: 0 16rpx;
     display: block;
     position: absolute;
-    width: 200px;
-    height: 30px;
+    width: 400rpx;
+    height: 60rpx;
     color: rgba(136, 136, 136, 1);
-    font-size: 14px;
+    font-size: 28rpx;
     text-align: left;
     font-family: Microsoft Yahei;
-    border: 1px solid rgba(187, 187, 187, 1);
-    right: 60px;
+    border: 2rpx solid rgba(187, 187, 187, 1);
+    right: 120rpx;
    
 }
 .tips{
-    width: 280px;
-    height: 45px;
-    margin-top:30px;
-    margin-left: 27.5px;
-    font-size: 14px;
+    width: 560rpx;
+    height: 90rpx;
+    margin-top:60rpx;
+    margin-left: 55rpx;
+    font-size: 28rpx;
     text-align:left;
     font-family:PingFangSC-regular ;
 }
@@ -50,5 +50,5 @@
     margin:auto;
 }
 .sign-button{
-    margin-top: 40px;
+    margin-top: 80rpx;
 }

@@ -1,2 +1,35 @@
 <!--pages/site/site.wxml-->
-<text>pages/site/site.wxml</text>
+<!-- 左上角图例 -->
+<view class="diagram">
+    <view class="diagram-a">
+        <image class="diagram-b" src="/images/icon/标记1.png"></image>
+        <text class="diagram-c">市级/敬老服务类项目</text>
+    </view>
+    <view class="diagram-a">
+        <image class="diagram-b" src="/images/icon/标记2.png"></image>
+        <text class="diagram-c">校级/爱心教学类项目</text>
+    </view>
+    <view class="diagram-a">
+        <image class="diagram-b" src="/images/icon/标记3.png"></image>
+        <text class="diagram-c">院级/公益实践类项目</text>
+    </view>
+</view>
+
+<!-- 地图查询 -->
+<view >
+    <text class="out-input">111</text>
+</view>
+
+<!-- 下方查询框 -->
+<view class="location">
+    <view class="location-a">
+        <image class="location-i" src="/images/icon/定点.png"></image>
+        <text class="location-b">当前定位：大观湿地公园</text>
+    </view>
+    <view class="location-a">
+        <image class="location-i" src="/images/icon/半径.png"></image>
+        <text class="location-b1">半径范围：</text>
+        <input class="location-w" type="text" placeholder="例如0.5km,1km等"></input>
+        <text class="location-c" catchtap="onTapJump">开始</text>
+    </view>
+</view>

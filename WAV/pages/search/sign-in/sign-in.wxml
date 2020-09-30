@@ -33,13 +33,14 @@
 <!-- 报名须知 -->
 <view class="tips">
   <radio value="r1" class="tick">
-    <text>{{text1}}</text>
   </radio>
+  <text>{{text1}}</text>
+  
 </view>
 <view class="tips">
-  <radio value="r1" class="tick">
-    <text>{{text2}}</text>
-  </radio>
+  <radio value="r1" class="tick"></radio>
+  <text>{{text2}}</text>
+  
 </view>
 
 <!-- 报名按钮 -->

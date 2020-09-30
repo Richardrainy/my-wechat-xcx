@@ -1,1 +1,86 @@
-/* pages/site/site.wxss */
+.diagram{
+    left: 10rpx;
+    top: 162rpx;
+    width: 410rpx;
+    height: 200rpx;
+    line-height: 40rpx;
+    background-color: rgba(247, 241, 241, 1);
+    border: 2rpx solid rgba(187, 187, 187, 1);
+}
+.diagram-a{
+    font-size: 28rpx;
+    font-family: PingFangSC-regular;
+    display: flex;
+    margin-top: 14rpx;
+}
+.diagram-b{
+    left: 18rpx;
+    top: 176rpx;
+    width: 48rpx;
+    height: 48rpx;
+}
+.diagram-c{
+    padding-top: 4rpx;
+    width: 328rpx;
+    height: 40rpx;
+    color:rgba(16,16,16,1);
+    text-align: center;
+}
+.out-input{
+    width: 100%;
+    height: 976rpx;
+}
+.location{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: rgba(247, 241, 241, 1);
+    border: 2rpx solid rgba(187, 187, 187, 1);
+}
+.location-a{
+    left: 14rpx;
+    margin-top: 2rpx;
+    display: flex;
+}
+.location-b{
+    height: 50rpx;
+    color: rgba(16, 16, 16, 1);
+    font-size: 36rpx;
+    text-align: left;
+    font-family: PingFangSC-regular;
+}
+.location-b1{
+    height: 50rpx;
+    width: 200rpx;
+    color: rgba(16, 16, 16, 1);
+    font-size: 36rpx;
+    text-align: left;
+    font-family: PingFangSC-regular; 
+}
+.location-w{
+    width: 384rpx;
+    height: 58rpx;
+    color: rgba(136, 136, 136, 1);
+    font-size: 28rpx;
+    text-align: left;
+    font-family: Microsoft Yahei;
+    border: 2rpx solid rgba(187, 187, 187, 1);
+}
+.location-c{
+    margin-left: 40rpx;
+    height: 34rpx;
+    width:82rpx;
+    border-radius: 12rpx 12rpx 12rpx 12rpx;
+    background-color: rgba(244, 236, 111, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 28rpx;
+    text-align: center;
+    font-family: Microsoft Yahei;
+    border: 2rpx solid rgba(187, 187, 187, 1);
+}
+.location-i{
+    width: 48rpx;
+    height: 48rpx; 
+}
+
+
