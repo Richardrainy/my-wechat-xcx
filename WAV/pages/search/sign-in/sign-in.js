@@ -20,7 +20,10 @@ Page({
   },
   //options(Object)
   onLoad: function(options){
-    
+    /*
+    尝试将用户输入的数据进行缓存
+    */
+   
   },
   onReady: function(){
     
